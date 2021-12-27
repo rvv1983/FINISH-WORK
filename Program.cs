@@ -5,3 +5,13 @@
 // [1, 3, 4, 5, 7, 1, 3] -> [4]
 // [2, -4, 6] -> [2, -4, 6]
 // [1, 3, 5] -> []
+int[] a = new int[9];
+void RndArr(int[] arr, int min, int max)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        arr[i] = new Random().Next(min, max);
+        Console.Write(arr[i] + " ");
+    }
+}
+RndArr(a, 0, 9);
