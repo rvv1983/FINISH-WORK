@@ -11,7 +11,10 @@ void RndArr(int[] arr, int min, int max)
     for (int i = 0; i < arr.Length; i++)
     {
         arr[i] = new Random().Next(min, max);
-        Console.Write(arr[i] + " ");
+        if (i % 2 == 0)
+    
+        Console.Write(i + " ");
     }
+    
 }
 RndArr(a, 0, 9);
